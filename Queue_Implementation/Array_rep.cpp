@@ -55,7 +55,7 @@ void Queue::display(){
     cout<<endl; }
 
 int main(){
-    int arr[8] = { };
+    int arr[8] = {34,56,5,78,9,13,65,123};
     Queue Qu(8);
     for(int i=0 ; i<8 ;i++){
             Qu.enqueue(arr[i]);

@@ -5,26 +5,55 @@ body {
 }
 
 header {
-    background-color: #f3d6b2;
-    color: #179bae;
-    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 0;
     text-align: center;
+    min-width: 40rem;
 }
 
-nav a {
-    color: white;
-    margin: 0 10px;
+#but{
+    margin-right: 90rem; }
+#bar1{
+    display: block; }
+#bar2{
+        display: none; }
+
+#sidebar {
+    display: none;
+    position: fixed;
+    top: 125px;
+    left: 0;
+    background-color: #d33e3e;
+    padding: 10px;
+    height: 100vh;
+    opacity: 50%;
+}
+
+#sidebar a {
+    display: block;
+    padding: 10px;
+    color: #333;
     text-decoration: none;
+}
+
+#sidebar a:hover {
+    background-color: #ddd;
 }
 
 main {
     padding: 20px;
 }
 
+section {
+    margin-bottom: 40px;
+}
+
 pre {
     background-color: #f4f4f4;
     padding: 10px;
     border-radius: 5px;
+    min-width: 30rem;
 }
 
 footer {
@@ -34,4 +63,58 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        width: 150px;
+    }
+
+    main {
+        min-width: 30rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #sidebar {
+        position: static;
+        width: 100%;
+        display: none; /* Hide sidebar by default on small screens */
+    }
+
+    #sidebar.active {
+        display: block; /* Show sidebar when active class is added */
+    }
+
+    main {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    header, footer {
+        padding: 5px 0;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+}
+
+/* Styling for the toggle button
+#but {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+} */
+
+@media (max-width: 480px) {
+#but {
+        display: block; /* Show the toggle button on small screens */
+    }
 }
