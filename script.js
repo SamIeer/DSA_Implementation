@@ -18,3 +18,20 @@ tog.addEventListener("click", ()=>{
     }
     
 });
+
+document.querySelectorAll('.copy-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const targetId = button.getAttribute('data-target');
+        const codeElement = document.getElementById(targetId);
+        const codeText = codeElement.textContent;
+
+        navigator.clipboard.writeText(codeText).then(() => {
+            button.textContent = 'Copied!';
+            setTimeout(() => {
+                button.textContent = 'Copy';
+            }, 2000);
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+    });
+});

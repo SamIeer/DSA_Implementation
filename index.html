@@ -23,8 +23,16 @@
 <main id="container">
         <section id="linkedlist">
             <h2>Linked List Implementation in C++</h2>
-            <p>This project demonstrates the implementation of a singly linked list in C++.</p>
-    <pre><code>
+            <dis>A Linked List is a linear data structure in which elements, called nodes, are stored in a sequence.<br> Each node contains two parts: data and a reference (or link) to the next node in the sequence</dis>
+            <h3>Features</h3>
+            <ul>
+                <li>Creation of List -   <i>Node * create_list(int A[],int n)</i></li>
+                <li>Insertion at a given position - <i>Node *insert_at(Node *head,int pos,int data)</i></li>
+                <li>Deletion of a specific node - <i>*delete_node(Node *head,int pos)</i> </li>
+                <li>Traversal and display of the list - <i>void print_list(Node *head)</i></li>
+            </ul>
+            
+    <pre> <code>
                 #include <iostream>
                     using namespace std;
                     class Node{
@@ -127,11 +135,22 @@
             cout << count_node(head);
             return 0;}
     </code></pre>
-
+    <h3>Source Code</h3>
+    <p>You can view the complete source code on my <a href="https://github.com/SamIeer/DSA_Implementation/tree/main/Linked_List_implementation" target="_blank">GitHub repository</a>.</p>
 </section>
         <section id="stack">
             <h2>Stack Implementation in C++</h2>
-            <p>This project demonstrates the implementation of a stack in C++.</p>
+            <dis>A Stack is a linear data structure that follows the Last In, First Out (LIFO) principle.<br> The most recently added element is the first to be removed</dis>
+            <h3>Features</h3>
+            <ul>
+                <li>push operation -   <i>void Stack::push(int x)</i></li>
+                <li>pop operation - <i>int Stack::pop()</i></li>
+                <li>peek Operation - <i>int peek(int index);</i> </li>
+                <li>Traversal and display of the Stack- <i>void Display();</i></li>
+                <li>Cheking for EmptyStack -<i>bool isEmpty();</i></li>
+                <li>Cheking for FullStack -<i>bool isFull();</i></li>
+                <li>Cheking for Topelement -<i>int Stacktop();</i></li>
+            </ul>
 
             <pre><code>
                 #include <iostream>
@@ -228,12 +247,22 @@
                 return 0; }
 
             </code></pre>
-
+            
+            <h3>Source Code</h3>
+            <p>You can view the complete source code on my <a href="https://github.com/SamIeer/DSA_Implementation/tree/main/Stack_Implementation" target="_blank">GitHub repository</a>.</p>
         </section>
 
         <section id="queue">
             <h2>Queue Implementation in C++</h2>
-            <p>This project demonstrates the implementation of a queue in C++.</p>
+            <dis>A Queue is a linear data structure that follows the First In, First Out (FIFO) principle.<br> The first element added is the first to be removed</dis>
+            <h3>Features</h3>
+            <ul>
+                <li>enqueue operation -   <i>void enqueue(int x);</i></li>
+                <li>Dequeue operation - <i>int dequeue();</i></li>
+                <li>Traversal and display of the Stack- <i>void Display();</i></li>
+                <li>Cheking for EmptyQueue -<i>bool isEmpty();</i></li>
+                <li>Cheking for FullQueue -<i>bool isFull();</i></li>
+            </ul>
             <pre><code>
                 #include <iostream>
                     using namespace std;
@@ -304,10 +333,12 @@
                 
                     return 0;}
             </code></pre>
+            <h3>Source Code</h3>
+            <p>You can view the complete source code on my <a href="https://github.com/SamIeer/DSA_Implementation/tree/main/Queue_Implementation" target="_blank">GitHub repository</a>.</p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 . All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>

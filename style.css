@@ -9,7 +9,12 @@ header {
     color: white;
     padding: 5px 0;
     text-align: center;
-    min-width: 40rem;
+    min-width: 40rem;}
+i{
+    color: rgb(241, 151, 135);
+}
+dis{
+    margin-left: 30px;
 }
 
 #but{
@@ -22,7 +27,7 @@ header {
 #sidebar {
     display: none;
     position: fixed;
-    top: 125px;
+    top: 127px;
     left: 0;
     background-color: #d33e3e;
     padding: 10px;
@@ -56,6 +61,23 @@ pre {
     min-width: 30rem;
 }
 
+.copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.copy-button:hover {
+    background-color: #45a049;
+}
+
+
 footer {
     background-color: #f4f4f4;
     text-align: center;
@@ -68,6 +90,7 @@ footer {
 @media (max-width: 768px) {
     #sidebar {
         width: 150px;
+        top: 128px;
     }
 
     main {
@@ -99,19 +122,6 @@ footer {
         margin: 0 5px;
     }
 }
-
-/* Styling for the toggle button
-#but {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    z-index: 1000;
-} */
 
 @media (max-width: 480px) {
 #but {
