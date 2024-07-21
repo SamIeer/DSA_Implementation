@@ -98,11 +98,11 @@ footer {
     }
 }
 
+
 @media (max-width: 480px) {
     #sidebar {
-        position: static;
-        width: 100%;
-        display: none; /* Hide sidebar by default on small screens */
+        position: fixed;
+        width: 20%;
     }
 
     #sidebar.active {
@@ -120,11 +120,5 @@ footer {
 
     nav a {
         margin: 0 5px;
-    }
-}
-
-@media (max-width: 480px) {
-#but {
-        display: block; /* Show the toggle button on small screens */
     }
 }
